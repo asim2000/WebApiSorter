@@ -2,7 +2,7 @@
 {
     public class Sorter
     {
-        public static int[] Sort(int[] array)
+        public static void Sort(int[] array)
         {
             for (int i = 0; i < array.Length-1; i++)
             {
@@ -16,7 +16,6 @@
                     }
                 }
             }
-            return array;
         }
     }
 }
