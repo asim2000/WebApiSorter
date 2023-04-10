@@ -10,9 +10,9 @@
                 {
                     if (array[i] > array[j])
                     {
-                        int temp = array[i];
-                        array[i] = array[j];
-                        array[j] = temp;
+                        array[i] += array[j];
+                        array[j] = array[i] - array[j];
+                        array[i] = array[i] - array[j];
                     }
                 }
             }
