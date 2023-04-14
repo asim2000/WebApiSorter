@@ -6,9 +6,9 @@ namespace WebApi.Controllers
     public class SortController : ControllerBase
     {
         [HttpPost]
-        public IActionResult Sort([FromBody] int[] array)
+        public IActionResult Sort([FromBody] int[] array,bool isAsc)
         {
-            Sorter.Sort(array);
+            Sorter.Sort(array,isAsc);
             return Ok(array);
         }
     }
